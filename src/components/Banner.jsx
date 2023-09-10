@@ -10,7 +10,7 @@ import TrackVisibility from "react-on-screen";
 function Banner() {
   const [loopNum, setLoopNum] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
-  const toRotate = ['Web Developer', ' Frontend Software Engineer']
+  const toRotate = ['Web Developer', ' Frontend Software Engineer', 'Very single and handsome']
   const [text, setText] = useState('')
   const [delta, setDelta] = useState(300 - Math.random() * 100)
   const period = 2000
@@ -53,11 +53,11 @@ function Banner() {
             <Col xs={12} md={6} xl={7}>
               <TrackVisibility>
               {({ isVisible }) => 
-              <div className={isVisible ? "animate_animated animate__fadeIn" : ""}>
+              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
               <span className="tagline">This is some of what I can do</span>
               <h1>{`Hello I'm Gugu Buthelezi, `}<span className="wrap">{text}</span></h1>
-              <p>I'm a 24 year old South African </p>
-              <button onClick={()=> console.log('yeehaw')}>Let's connect <ArrowRightCircle size={24}/></button>
+              <p>I'm a 24 year old South African with a strong passion for building web applications with great user experiences.</p>
+              <button onClick={()=> alert('Please proceed to the contact section, thank you')}>Let's connect <ArrowRightCircle size={24}/></button>
               </div>}
               </TrackVisibility>
             </Col>

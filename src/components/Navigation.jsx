@@ -41,7 +41,7 @@ export default function Navigation() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link
-                href="#"
+                href="#home"
                 className={
                   activeLink === "home" ? "active navbar-link" : "navbar-link"
                 }
@@ -75,11 +75,11 @@ export default function Navigation() {
                 <a href="#">
                   <img src={NavIcon1} />
                 </a>
-                <a href="#" className="git">
+                <a href="https://github.com/GuguButhelezi/" target="_blank" className="git">
                   <Github />
                 </a>
               </div>
-              <button className="vvd" onClick={() => console.log("i forgot what to do with this")}>
+              <button className="vvd" onClick={() => alert('Please proceed to the contact section, thank you')}>
                 <span>I would love to chat!</span>
               </button>
             </span>

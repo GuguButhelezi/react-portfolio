@@ -19,7 +19,7 @@ function Footer() {
                   <a href="/#">
                     <img src={navIcon1} alt="" />
                   </a>
-                  <a href="/#" className="git">
+                  <a href="https://github.com/GuguButhelezi/" target="_blank" className="git">
                     <Github />
                   </a>
                 </div>

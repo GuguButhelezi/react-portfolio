@@ -14,16 +14,19 @@ function Projects() {
       title: "Library E-Com",
       description: "[project description]",
       imageURL: projectImg1,
+      projectLink: 'https://rsa-library-11qajnqpl-gugubuthelezi.vercel.app/',
     },
     {
       title: "Movie database",
       description: "[project description]",
       imageURL: projectImg2,
+      projectLink: 'https://gugubuthelezi.github.io/Week-4-Final-Project/',
     },
     {
       title: "React media database",
       description: "[project description]",
       imageURL: projectImg3,
+      projectLink: 'https://diamond-plus-react.vercel.app',
     },
   ];
   return (
@@ -34,7 +37,7 @@ function Projects() {
             <Col>
             <TrackVisibility>
               {({ isVisible }) => 
-              <div className={isVisible ? "animate_animated animate__fadeSlideInUp" : ""}>
+              <div className={isVisible ? "animate__animated animate__rubberBand" : ""}>
               <h2>Projects</h2>
               <p> Leveraging HTML, CSS, JavaScript, and modern frameworks, I've created visually appealing websites and applications that reflect my technical expertise.</p>
               </div>}
