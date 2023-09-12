@@ -3,8 +3,6 @@ import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle, Github } from "react-bootstrap-icons";
 import headerImage from '../assets/img/header-img.svg'
 import { useState, useEffect } from "react";
-import 'animate.css';
-import TrackVisibility from "react-on-screen";
 
 
 function Banner() {
@@ -51,15 +49,13 @@ function Banner() {
         <Container>
           <Row className="align-items-center">
             <Col xs={12} md={6} xl={7}>
-              <TrackVisibility>
-              {({ isVisible }) => 
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+              
               <span className="tagline">This is some of what I can do</span>
               <h1>{`Hello I'm Gugu Buthelezi, `}<span className="wrap">{text}</span></h1>
               <p>I'm a 24 year old South African with a strong passion for building web applications with great user experiences.</p>
-              <button onClick={()=> alert('Please proceed to the contact section, thank you')}>Let's connect <ArrowRightCircle size={24}/></button>
-              </div>}
-              </TrackVisibility>
+              <a href="#connect">
+              <button>Let's connect <ArrowRightCircle size={24}/></button>
+              </a>
             </Col>
             <Col xs={12} md={6} xl={5}>
               <img src={headerImage} alt="header image" />

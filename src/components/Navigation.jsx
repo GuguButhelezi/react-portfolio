@@ -79,9 +79,11 @@ export default function Navigation() {
                   <Github />
                 </a>
               </div>
-              <button className="vvd" onClick={() => alert('Please proceed to the contact section, thank you')}>
+              <a href="#connect">
+              <button className="vvd">
                 <span>I would love to chat!</span>
               </button>
+              </a>
             </span>
           </Navbar.Collapse>
         </Container>

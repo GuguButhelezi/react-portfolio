@@ -6,16 +6,54 @@ import Stack from "./components/Stack";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 function App() {
   return (
     <>
       <div className="App">
         <Navigation />
-        <Banner />
-        <Stack />
-        <Projects />
-        <Contact />
+        <TrackVisibility>
+          {({ isVisible }) => (
+            <div
+              className={isVisible ? "animate__animated animate__fadeInLeft" : ""}
+            >
+              <Banner />
+            </div>
+          )}
+        </TrackVisibility>
+        <TrackVisibility>
+          {({ isVisible }) => (
+            <div
+              className={
+                isVisible ? "animate__animated animate__backInLeft" : ""
+              }
+            >
+              <Stack />
+            </div>
+          )}
+        </TrackVisibility>
+        <TrackVisibility>
+          {({ isVisible }) => (
+            <div
+              className={
+                isVisible ? "animate__animated animate__rubberBand" : ""
+              }
+            >
+              <Projects />
+            </div>
+          )}
+        </TrackVisibility>
+        <TrackVisibility>
+          {({ isVisible }) => (
+            <div
+              className={isVisible ? "animate__animated animate__backInUp" : ""}
+            >
+              <Contact />
+            </div>
+          )}
+        </TrackVisibility>
         <Footer />
       </div>
     </>

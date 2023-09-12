@@ -5,8 +5,6 @@ import projectImg2 from "../assets/img/Week4Project.png";
 import projectImg3 from "../assets/img/Week6Project.png";
 import ProjectCard from "./ProjectCard";
 import colour2 from '../assets/img/color-sharp2.png'
-import 'animate.css'
-import TrackVisibility from "react-on-screen";
 
 function Projects() {
   const projects = [
@@ -35,13 +33,9 @@ function Projects() {
         <Container>
           <Row>
             <Col>
-            <TrackVisibility>
-              {({ isVisible }) => 
-              <div className={isVisible ? "animate__animated animate__rubberBand" : ""}>
+            
               <h2>Projects</h2>
               <p> Leveraging HTML, CSS, JavaScript, and modern frameworks, I've created visually appealing websites and applications that reflect my technical expertise.</p>
-              </div>}
-              </TrackVisibility>
               <Tab.Container id="projects-tabs" defaultActiveKey={"first"}>
                 <Nav variant="pills" className="nav-pills justify-content-center align-items-center" id="pills-tab">
                   <Nav.Item>
