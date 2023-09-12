@@ -31,7 +31,7 @@ export default function Navigation() {
   return (
     <>
     
-      <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+      <Navbar expand="lg" className={scrolled ? "scrolled" : ""} style={{ visibility: scrolled ? "hidden" : "visible" }}>
         <Container>
           <Navbar.Brand href="home">
             <img src={Logo} alt="this is the logo" />
