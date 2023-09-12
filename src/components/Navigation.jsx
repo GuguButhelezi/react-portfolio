@@ -21,7 +21,7 @@ export default function Navigation() {
 
     window.addEventListener("scroll", whileScroll);
 
-    return window.removeEventListener("scroll", whileScroll);
+    return () => window.removeEventListener("scroll", whileScroll);
   }, []);
 
   function onUpdateActiveLink(value) {
@@ -30,6 +30,7 @@ export default function Navigation() {
 
   return (
     <>
+    
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="home">

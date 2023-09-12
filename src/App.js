@@ -8,21 +8,17 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import Headroom from "react-headroom";
 
 function App() {
   return (
     <>
       <div className="App">
-        <Navigation />
-        <TrackVisibility>
-          {({ isVisible }) => (
-            <div
-              className={isVisible ? "animate__animated animate__fadeInLeft" : ""}
-            >
+        
+          <Navigation />
+          
+        
               <Banner />
-            </div>
-          )}
-        </TrackVisibility>
         <TrackVisibility>
           {({ isVisible }) => (
             <div
@@ -34,26 +30,12 @@ function App() {
             </div>
           )}
         </TrackVisibility>
-        <TrackVisibility>
-          {({ isVisible }) => (
-            <div
-              className={
-                isVisible ? "animate__animated animate__rubberBand" : ""
-              }
-            >
+        
               <Projects />
-            </div>
-          )}
-        </TrackVisibility>
-        <TrackVisibility>
-          {({ isVisible }) => (
-            <div
-              className={isVisible ? "animate__animated animate__backInUp" : ""}
-            >
+            
+        
               <Contact />
-            </div>
-          )}
-        </TrackVisibility>
+            
         <Footer />
       </div>
     </>

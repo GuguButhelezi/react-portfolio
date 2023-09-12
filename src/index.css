@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 /* Nav */
@@ -66,13 +66,12 @@ nav.navbar{
   transition: 0.35s ease-in-out;
 }
 
-nav.navbar.scrolled{
+/* nav.navbar.scrolled{
   padding: 0px 0;
-  background-color: #121212;
-}
+} */
 
 nav.navbar a.navbar-brand{
-  width: 9%;
+  width: 9% ;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link{

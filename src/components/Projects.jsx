@@ -5,6 +5,7 @@ import projectImg2 from "../assets/img/Week4Project.png";
 import projectImg3 from "../assets/img/Week6Project.png";
 import ProjectCard from "./ProjectCard";
 import colour2 from '../assets/img/color-sharp2.png'
+import TrackVisibility from "react-on-screen";
 
 function Projects() {
   const projects = [
@@ -33,11 +34,20 @@ function Projects() {
         <Container>
           <Row>
             <Col>
-            
+            <TrackVisibility>
+          {({ isVisible }) => (
+            <div
+              className={
+                isVisible ? "animate__animated animate__rubberBand" : ""
+              }
+            >
               <h2>Projects</h2>
               <p> Leveraging HTML, CSS, JavaScript, and modern frameworks, I've created visually appealing websites and applications that reflect my technical expertise.</p>
+              </div>
+          )}
+        </TrackVisibility>
               <Tab.Container id="projects-tabs" defaultActiveKey={"first"}>
-                <Nav variant="pills" className="nav-pills justify-content-center align-items-center" id="pills-tab">
+                {/* <Nav variant="pills" className="nav-pills justify-content-center align-items-center" id="pills-tab">
                   <Nav.Item>
                     <Nav.Link eventKey="first">Tab 1</Nav.Link>
                   </Nav.Item>
@@ -47,7 +57,8 @@ function Projects() {
                   <Nav.Item>
                     <Nav.Link eventKey="third">Tab 3</Nav.Link>
                   </Nav.Item>
-                </Nav>
+                </Nav> */}
+                
                 <Tab.Content>
                     <Tab.Pane eventKey={'first'}>
                         <Row>
@@ -61,8 +72,8 @@ function Projects() {
                         </Row>
 
                     </Tab.Pane>
-                    <Tab.Pane eventKey={'second'}>Projects page 2</Tab.Pane>
-                    <Tab.Pane eventKey={'third'}>Projects page 3</Tab.Pane>
+                    {/* <Tab.Pane eventKey={'second'}>Projects page 2</Tab.Pane>
+                    <Tab.Pane eventKey={'third'}>Projects page 3</Tab.Pane> */}
 
                 </Tab.Content>
               </Tab.Container>

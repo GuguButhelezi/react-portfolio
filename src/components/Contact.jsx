@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import contactImage from "../assets/img/contact-img.svg";
 import emailjs from "@emailjs/browser";
+import TrackVisibility from "react-on-screen";
 
 function Contact() {
   const form = useRef();
@@ -45,7 +46,15 @@ function Contact() {
         <Container>
           <Row className="align-items-center">
             <Col md={6}>
+            <TrackVisibility>
+          {({ isVisible }) => (
+            <div
+              className={isVisible ? "animate__animated animate__backInUp" : ""}
+            >
               <img src={contactImage} alt="Contact Me" />
+              </div>
+          )}
+        </TrackVisibility>
             </Col>
             <Col md={6}>
               <h2>I'm open to new opportunities</h2>
