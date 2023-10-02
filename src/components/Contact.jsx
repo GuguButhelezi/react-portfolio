@@ -57,11 +57,6 @@ function Contact() {
         </TrackVisibility>
             </Col>
             <Col md={6}>
-            <TrackVisibility>
-          {({ isVisible }) => (
-            <div
-              className={isVisible ? "animate__animated animate__backInDown" : ""}
-            >
               <h2>I'm open to new opportunities</h2>
               
             <form ref={form} onSubmit={sendEmail}>
@@ -75,9 +70,7 @@ function Contact() {
               <input type="submit" value={buttonText} required/>
               </Row>
             </form>
-            </div>
-          )}
-        </TrackVisibility>
+
             </Col>
           </Row>
           {status?.message && (
