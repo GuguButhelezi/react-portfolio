@@ -4,6 +4,7 @@ import projectImg1 from "../assets/img/ReactLibrary.png";
 import projectImg2 from "../assets/img/Week4Project.png";
 import projectImg3 from "../assets/img/Week6Project.png";
 import projectImg4 from "../assets/img/disneyplus.png";
+import projectImg5 from '../assets/img/twitter.png'
 import ProjectCard from "./ProjectCard";
 import colour2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
@@ -42,7 +43,15 @@ function Projects() {
       imageURL: projectImg4,
       projectLink: "https://disney-plus-clone-eadec.web.app/",
     },
+    {
+      title: 'Twitter Clone',
+      tools: 'NextJS, Tailwind, Redux, Firebase',
+      description: 'A Twitter Clone with a responsive user interface. Offers secure authentication and fast data sync.',
+      imageURL: projectImg5,
+      projectLink: 'https://twitter-clone-one-dun.vercel.app/',
+    }
   ];
+
   return (
     <>
       <section className="project" id="project">

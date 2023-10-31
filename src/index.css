@@ -398,9 +398,9 @@ img{
   transition: 400ms ease-in-out;
 }
 
-/* .project .nav.nav-pills .nav-item:active{
+.project .nav.nav-pills .nav-item:active{
   background: linear-gradient(90deg, rgb(255, 0, 212) -8%, rgb(94, 1, 94));
-} */
+}
 
 .proj__link{
   font-size: 40px;
