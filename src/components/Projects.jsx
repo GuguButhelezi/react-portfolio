@@ -5,6 +5,7 @@ import projectImg2 from "../assets/img/Week4Project.png";
 import projectImg3 from "../assets/img/Week6Project.png";
 import projectImg4 from "../assets/img/disneyplus.png";
 import projectImg5 from '../assets/img/twitter.png'
+import projectImg6 from '../assets/img/discord.png'
 import ProjectCard from "./ProjectCard";
 import colour2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
@@ -49,6 +50,13 @@ function Projects() {
       description: 'A Twitter Clone with a responsive user interface. Offers secure authentication and fast data sync.',
       imageURL: projectImg5,
       projectLink: 'https://twitter-clone-one-dun.vercel.app/',
+    },
+    {
+      title: 'Discord Clone',
+      tools: 'Vite, Tailwind, Redux, Firebase',
+      description: 'A Discord Clone with a responsive user interface. Offers secure authentication and real time data sync.',
+      imageURL: projectImg6,
+      projectLink: 'https://discord-clone-three-delta.vercel.app/',
     }
   ];
 
@@ -99,7 +107,7 @@ function Projects() {
                         .map((project, index) => {
                           return <ProjectCard key={index} {...project} />;
                         })
-                        .slice(0, 2)}
+                        .slice(0, 3)}
                     </Row>
                   </Tab.Pane>
                   </Tab.Content>
@@ -109,7 +117,7 @@ function Projects() {
                     <Row>
                       {projects.map((project, index) => {
                         return <ProjectCard key={index} {...project} />;
-                      }).slice(2)}
+                      }).slice(3)}
                     </Row>
                   </Tab.Pane>
                 </Tab.Content>
