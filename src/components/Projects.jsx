@@ -6,6 +6,7 @@ import projectImg3 from "../assets/img/Week6Project.png";
 import projectImg4 from "../assets/img/disneyplus.png";
 import projectImg5 from '../assets/img/twitter.png'
 import projectImg6 from '../assets/img/discord.png'
+import projectImg7 from '../assets/img/ultraverse.png'
 import ProjectCard from "./ProjectCard";
 import colour2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
@@ -19,14 +20,6 @@ function Projects() {
         "Created a library website for the average library that contains a specific number of books. Also makes use of a shopping cart.",
       imageURL: projectImg1,
       projectLink: "https://rsa-library-11qajnqpl-gugubuthelezi.vercel.app/",
-    },
-    {
-      title: "Movie database",
-      tools: "HTML, CSS, JavaScript",
-      description:
-        "Created a movie website that uses a public api to display the 10 movies that are most accurate to the search input.",
-      imageURL: projectImg2,
-      projectLink: "https://gugubuthelezi.github.io/Week-4-Final-Project/",
     },
     {
       title: "React media database",
@@ -53,11 +46,18 @@ function Projects() {
     },
     {
       title: 'Discord Clone',
-      tools: 'Vite, Tailwind, Redux, Firebase',
+      tools: 'React, Tailwind, Redux, Firebase',
       description: 'A Discord Clone with a responsive user interface. Offers secure authentication and real time data sync.',
       imageURL: projectImg6,
       projectLink: 'https://discord-clone-three-delta.vercel.app/',
-    }
+    },
+    {
+      title: 'NFT Marketplace',
+      tools: 'React, CSS',
+      description: 'A remote internship from FrontEnd SImplified with a responsive user interface.',
+      imageURL: projectImg7,
+      projectLink: 'https://nft-marketplace-internship-smoky.vercel.app/',
+    },
   ];
 
   return (
